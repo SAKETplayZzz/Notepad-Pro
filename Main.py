@@ -121,11 +121,12 @@ class Notepad:
 
         # Scrollbar will adjust automatically according to the content
         self.__thisScrollBar.config(command=self.__thisTextArea.yview)
-
+        def HELP():
+            print('Yet to make')
         self.__thisMenuBar.add_cascade(label="Theme",
                                        menu=self.__Themes)
-        self.__Themes.add_command(label='Dark',command = print('Yet to make'))
-        self.__Themes.add_command(label='Light', command=print('Yet to make'))
+        self.__Themes.add_command(label='Dark',command=HELP)
+        self.__Themes.add_command(label='Light', command=HELP)
 
         self.__thisTextArea.config(yscrollcommand=self.__thisScrollBar.set, bg=Color)
 
