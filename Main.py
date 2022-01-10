@@ -124,8 +124,8 @@ class Notepad:
 
         self.__thisMenuBar.add_cascade(label="Theme",
                                        menu=self.__Themes)
-        self.__Themes.add_command(label='Dark',command = print('HELP'))
-        self.__Themes.add_command(label='Light', command=print('HELP'))
+        self.__Themes.add_command(label='Dark',command = print('Yet to make'))
+        self.__Themes.add_command(label='Light', command=print('Yet to make'))
 
         self.__thisTextArea.config(yscrollcommand=self.__thisScrollBar.set, bg=Color)
 
